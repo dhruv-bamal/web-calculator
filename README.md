@@ -72,7 +72,7 @@ All logic is handled using event delegation for clean and scalable code.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/web-calculator.git
+git clone https://github.com/dhruv-bamal/web-calculator.git
 ```
 
 2. Navigate into the folder:
