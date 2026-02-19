@@ -8,7 +8,7 @@ This project demonstrates DOM manipulation, event handling, state management, an
 
 ## 🚀 Live Demo
 
-
+https://dhruv-bamal.github.io/web-calculator/
 
 ---
 
