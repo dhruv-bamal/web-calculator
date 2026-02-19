@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-slate-900 text-white">
+
+  <div class="w-[340px] bg-slate-800 rounded-2xl shadow-xl p-5">
+    
+    <div class="bg-slate-900 rounded-xl p-4 mb-4">
+      <div id="history" class="text-slate-400 text-sm text-right min-h-[20px]"></div>
+      <div id="display" class="text-3xl text-right font-semibold break-words">0</div>
+    </div>
+
+    <div class="grid grid-cols-4 gap-3">
+      <button data-action="clear" class="col-span-2 bg-rose-500 hover:bg-rose-600 rounded-xl py-3 font-semibold">C</button>
+      <button data-action="delete" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">DEL</button>
+      <button data-op="/" class="bg-indigo-500 hover:bg-indigo-600 rounded-xl py-3 font-semibold">÷</button>
+
+      <button data-num="7" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">7</button>
+      <button data-num="8" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">8</button>
+      <button data-num="9" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">9</button>
+      <button data-op="*" class="bg-indigo-500 hover:bg-indigo-600 rounded-xl py-3 font-semibold">×</button>
+
+      <button data-num="4" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">4</button>
+      <button data-num="5" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">5</button>
+      <button data-num="6" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">6</button>
+      <button data-op="-" class="bg-indigo-500 hover:bg-indigo-600 rounded-xl py-3 font-semibold">−</button>
+
+      <button data-num="1" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">1</button>
+      <button data-num="2" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">2</button>
+      <button data-num="3" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">3</button>
+      <button data-op="+" class="bg-indigo-500 hover:bg-indigo-600 rounded-xl py-3 font-semibold">+</button>
+
+      <button data-num="0" class="col-span-2 bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">0</button>
+      <button data-action="dot" class="bg-slate-700 hover:bg-slate-600 rounded-xl py-3 font-semibold">.</button>
+      <button data-action="equals" class="bg-emerald-500 hover:bg-emerald-600 rounded-xl py-3 font-semibold">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
